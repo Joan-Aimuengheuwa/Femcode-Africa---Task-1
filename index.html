@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <link rel="stylesheet" type="text/css" href="resources/css/fontawesome/css/all.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/fontawesome/css/brands.css">
+        <style>
+
+   
+            body{
+                font-family: sans-serif;  
+            }
+
+            .div{
+                max-height: 100vh;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .div1{
+                width: 100%;
+                height: 100vh;
+                background: url("resources/images/girl.webp"), no-repeat;
+                background-attachment: fixed;
+            }
+            .div2{
+                width: 100%;
+                height: 40vh;
+                background-color: white;
+                background-attachment: fixed;
+                display: flex;  
+            }
+
+            header{
+                height: 75px;
+                width: 100%;
+                padding-top: 50px;       
+            }
+
+            .span{
+                font-size: 26px;
+                font-weight: bold;
+                letter-spacing: -1px;
+                color: white;
+
+            }
+            
+            .li{
+                
+                list-style-type: none;
+                padding-left: 20px;
+                display: inline;
+                font-size: 15px;
+                letter-spacing: 1px;
+                
+            }
+
+            .li2{
+                float: right;
+                padding-right: 100px;
+                list-style-type: none;
+                display: flex; 
+            }
+            .li2 a:hover{
+                background-color: gray;
+                padding: 8px;
+                border-bottom: 2px solid rgb(228, 226, 226);
+            }
+            
+            .li a{
+                color: rgb(233, 227, 227);
+                text-decoration: none;
+                
+            }
+            a:hover{
+                color: white;
+            }
+            .select{
+                
+                border: 0;
+            }
+            .span2{
+                margin-left: 25px;
+            }
+            h1{
+                font-size: 55px;
+                text-align: left;
+                color: white;
+                padding: 50px;
+                font-weight: 500;
+                letter-spacing: -2px;
+                margin-top: 70px;
+                padding-bottom: 20px;
+                
+            }
+            .img2{
+                width: 70%;
+                height: 85px;
+                margin-top: 300px;
+                margin-right: 300px;
+                margin-left: 240px;
+
+            }
+            h2{
+                text-align: center;
+                font-weight: lighter;
+                font-size: 30px;
+            }
+            button{
+                background-color: yellow;
+                color: black;
+                padding: 15px;
+                margin-left: 50px;
+                border: 1px solid yellow;
+                font-weight: bold;
+                width: 150px;
+                letter-spacing: 1px;
+            }
+            hr{
+                width: 50px;
+                background-color: yellow;
+                margin-left: auto;
+                margin-right: auto;
+                border: 2px;
+                height: 2px;
+
+            }
+            .div3{
+                background-image: url("resources/images/guy.webp");
+                background-size: 400px 500px;
+                background-repeat: no-repeat;
+                height: 100vh;
+                width: 400px;
+                margin: 8px;
+                margin-left: 60px;
+                text-align: center;
+            }
+            .div4{
+                background-image: url("resources/images/whitegirl.webp");
+                background-size: 400px 500px;
+                background-repeat: no-repeat;
+                height: 100vh;
+                width: 400px;
+                margin: 8px;
+                text-align: center;
+                color: white;
+            }
+            .div5{
+                background-image: url("resources/images/grey bike.webp");
+                background-size: 400px 500px;
+                background-repeat: no-repeat;
+                height: 100vh;
+                width: 400px;
+                margin: 8px;
+                margin-right: 60px;
+                text-align: center;
+                color: white;
+                
+            }
+            .div6{
+                width: 100%;
+                height: 40vh;
+                background-color: white;
+                background-attachment: fixed;
+                display: flex;
+                margin-top: 320px;
+                
+
+            }
+            .img3{
+                width: 650px;
+                height: 350px;
+                margin: 20px;
+                margin-top: 50px;
+            }
+            .img4{
+                width: 680px;
+                height: 365px;
+                margin-top: 200px;
+                margin-left: 60px;
+                position: sticky;
+
+            }
+            .img5{
+                width: 330px;
+                height: 45vh;
+                margin-left: 350px;
+                
+
+            }
+            .p1{
+                margin: 10px;
+                margin-top: 23px;
+                font-size: 12px;
+                letter-spacing: 1px;
+                font-weight: bolder;
+            }
+            .p2{
+                margin: 15px;
+                font-size: 28px;
+            }
+            .p3{
+                color:rgb(82, 80, 80);
+                font-size: 23px;
+                line-height: 35px;
+                text-align: center;
+                margin-top: 50px;
+            }
+            .hh{
+                font-weight: bolder;
+                font-size: 55px;
+                color: black;
+                margin-left: 20px;
+               
+            }
+            .span3{
+                color: rgb(87, 84, 84);
+                font-size: 23px;
+                letter-spacing: 0.5px;
+                font-weight: 500;
+                line-height: 35px;    
+                
+            }
+            .span4{
+                color: black;
+                font-size: 11.5px;
+                letter-spacing: 1px;
+
+            }
+            .span5{
+                color: rgb(75, 72, 72);
+                font-size: 32px;
+                letter-spacing: 0.5px;
+                font-weight: 500;
+                line-height: 35px;
+                margin-top: 20px;    
+                
+            }
+            .span6{
+                background-color: rgb(78, 78, 78);
+                color: white;
+                font-size: 10px;
+                padding: 5px;
+                border: 1px solid rgb(95, 94, 94);
+                border-radius: 5px;
+                margin-left: 5px;
+                font-weight: bold;
+                
+                
+            }
+            
+            .hh2{
+                font-weight: bolder;
+                font-size: 55px;
+                color: black;
+                position: absolute;
+                margin-top: 200px;
+                margin-left: 608px;
+            }
+            .hh3{
+                font-weight: bolder;
+                font-size: 42px;
+                color: black;
+                margin-left: 20px;
+                margin-top: 2px;
+               
+            }
+            .div7{
+                width: 100%;
+                height: 45vh;
+                background-color: rgb(255, 230, 0);
+                display: flex;
+                margin-top: 300px;
+                
+
+            }
+            .img6{
+                width: 160px;
+                height: 48px;
+                margin-top: 20px;
+                margin-left: -1px;
+                margin-right: 10px;
+            }
+            .img8{
+                width: 190px;
+                height: 60px;
+                margin-top: 40px;
+                margin-left: 1px;
+                margin-right: 35px;
+                
+            }
+            .img9{
+                width: 110px;
+                height: 110px;
+                margin: 15px;
+                margin-top: 5px;
+            }
+
+            li{
+                list-style-type: none;
+                margin-top: 15px;
+                font-size: 13px;
+                letter-spacing: 1px;
+                width: 230px;
+            }
+
+            .li1{
+                color: rgb(85, 84, 84);
+                font-size: 15.5px;
+                font-weight: 600;
+                
+            }
+            
+                
+            
+            footer{
+                height: 50vh;
+                display: flex;
+                padding: 30px;
+                
+            }
+            .htwo{
+                font-weight: bolder;
+                font-size: 23px;
+                margin-top: 10px;
+               
+               
+            }
+            .li7{
+                margin-left: -15px;
+            }
+            
+            
+            .div9{
+               margin-top: 100px;
+               display: flex;
+               font-weight: lighter;
+               
+                
+            }
+            h6{
+                
+                text-align: right;
+                margin-left: 0;
+                margin-top: -15px;
+            }
+            .ul{
+                width: 200px;
+                text-align: center;
+                margin-left: -50px;
+            }
+            .fixed{
+                margin-top: 0;
+                width: 98.2%;
+                height: 50px;
+                padding: 4px;
+                color: white;
+                position: fixed;
+                background-color: rgba(139, 138, 138, 0.6);
+                text-align: center;
+                opacity:0%;
+            }
+            
+            .para{
+                
+                font-size: 17px;
+
+            }
+            .fa-times{
+               float: right;
+               margin-right: 20px;
+            }
+            .click{
+                text-decoration: underline;
+            }
+
+            @media screen and (max-width: 768px) {
+        .div2{
+                display: block;  
+            } 
+            .div3{
+                
+                height: 50vh;
+                margin: 0;
+                margin-left: auto;
+                text-align: center;
+                width: 100%;
+                padding-top: 10px;
+            }
+            .div4{
+                height: 50vh;
+                margin: 0;
+                margin-left: auto;
+                text-align: center;
+                width: 100%;
+                padding-top: 10px;
+            }
+
+            .div5{
+                height: 50vh;
+                margin: 0;
+                margin-left: auto;
+                text-align: center;
+                width: 100%;
+                padding-top: 10px;
+                
+            }
+            .p3{
+                font-size: 20px;
+                line-height: 20px;
+                text-align: center;
+                margin-top: 730px;
+            }
+
+            .li{
+                padding-left: 20px;
+                display: inline;
+                font-size: 10px;
+                letter-spacing: 0.5px;
+                
+            }
+            .li2{
+                float:none;
+                padding-top:20px;
+                padding-left: 20px;
+                list-style-type: none;
+                display: flex; 
+            }
+
+            .img2{
+                width: 70%;
+                height: 70px;
+                margin-top: auto;
+                margin-right: auto;
+                margin-left: auto;
+
+            }
+            .hh{
+                font-size: 35px;
+                color: black;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 7px;
+               
+            }
+
+            
+            .span3{
+                font-size: 18px;
+                line-height: 20px;    
+                
+            }
+
+            .img3{
+                width: 100%;
+                height: 40vh;
+                margin: 0;
+                margin-top: -13px;
+            }
+
+            .img4{
+                width: 100%;
+                height: 40vh;
+                margin-top: 350px;
+                margin-left: 0;
+                
+
+            }
+            .img5{
+                width: 100%;
+                height: 50vh;
+                margin-left: 20px;
+
+            }
+
+            .hh2{
+                font-size: 30px;
+                position: relative; 
+                margin-top: 500px;
+                margin-left: -8px;
+                padding-bottom: 20px;
+            }
+
+            .div6 {
+                display: block;
+            }
+            h1 {
+                margin-top: 30px;
+            }
+            footer{
+                height: 100%;
+                display: block;
+                padding: 10px;
+                margin-bottom: 0;
+                margin-top: 0;
+                background-color: yellow;
+                
+                
+            }
+
+            .hh3{
+                font-weight: bolder;
+                font-size: 25px;
+                color: black;
+                margin-left: 20px;
+                margin-top: 20px;
+               
+            }
+            .span5 {
+                font-size: 20px;
+            }
+
+            .div7{
+                height: 100%;
+                text-align: center;
+                display: block;
+                margin-top: 540px;
+                margin-bottom: 0;
+                margin-left: auto;
+                margin-right: auto;
+                
+
+            }
+            .img5 {
+                display: none;
+            }
+            .htwo{
+                
+                margin-left: 34px;
+                
+            }
+            .li7{
+                margin-left: 7px; 
+            }
+
+            .img8{
+                
+               display: none;
+                
+                
+            }
+            .div9{
+                margin-top: 10px;
+                margin-bottom: -8px;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+           
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="div">
+            <div class="div1">
+                <div class="fixed"><p class="para"><b>The SoulCycle Standard of fitness & safety.</b> 
+                    Click <span class="click">here</span> to see the changes we're making ahead of any possible studio openings.<i class="fa fa-times"></i></p></i></div>
+                <header>
+                   <ul>
+                       <li class="li"><a href="#"><span class="span">SOULCYCLE</span></a></li>
+                       <li class="li"><a href="#">SoulConnected</a></li>
+                       <li class="li"><a href="#">Our Studios</a></li>
+                       <li class="li"><a href="#">Soul Shop</a></li>
+
+                       <li class="li"> <span class="li2"><a href="#"> 
+                           <i class="fa fa-map-marker-alt"></i>&nbsp; NYC &nbsp;<i class="fa fa-angle-down"></i></a>   &nbsp;  
+                           <a href="#"><span class="span2">Log in</span></a>
+                        </span></li> 
+                   </ul>
+                </header>
+                <h1>Sweat with us,<br>no bike required.</h1>
+                <a href="#"><button>LET'S GO</button></a>
+                
+            </div>
+            <hr>
+            <h2>Get more Soul</h2>
+            <div class="div2">
+               <div class="div3"><p class="p1">LIVE ON SIRIUXSM</p><p class="p2">Instructor-guided workouts on SoulCycle Radio.</p></div>
+               <div class="div4"><p class="p1">SOULSHOP</p><p class="p2">Soul by SoulCycle's<br>signature fits.</p></div>
+               <div class="div5"><p class="p1">THE AT HOME BIKE</p><p class="p2">Select markets: Pre-order now for may delievery.</p></div>
+            </div>
+            <img class="img2" src="resources/images/move.PNG">
+            <p class="p3">In a dim, candlelit studio, led by the most magnetic instructors, you'll surrender to the beat of<br> 
+                the music and get lost in the energy of every other rider in the room as we push towards the<br>
+                 finish line, together.</p>
+                 <div class="div2">
+                <h1 class="hh">Revolutionary<br>workout<br>
+                <p class="span3">45 minutes to go all out, connect with your <br>body, and recharge your soul.</p>
+                <p class="span4">SEE HOW WE RIDE <i class="fa fa-angle-right"></i></p></h1>
+            <img class="img3" src="resources/images/redpeople.webp">
+            </div>
+            <div class="div2">
+                <img class="img4" src="resources/images/yellow.webp">
+                <h1 class="hh2">Legendary<br>instructors<br>
+                    <p class="span3">Each has their own style, but they all bring a<br>magnetic energy that'll challenge and inspire.</p>
+                    <p class="span4">MEET OUR INSTRUCTORS <i class="fa fa-angle-right"></i></p></h1>
+            </div>
+            <div class="div6">
+                <h1 class="hh">Transformative<br>music<br>
+                <p class="span3">Instructor-curated playlists&ndash;made to push <br>you through every sprint, hill, and climb.</p>
+                <p class="span4">GET OUR MUSIC <i class="fa fa-angle-right"></i></p></h1>
+            <img class="img3" src="resources/images/purple.webp">
+            </div>
+            <div class="div7">
+                <h1 class="hh3">SoulCycle on the go<br>
+                <p class="span5">Download the SoulCycle app for<br> iPhone and Android<span class="span6">NEW</span><br>
+                    <img class="img6" src="resources/images/apple.png">
+                    <img class="img6" src="resources/images/google_play.png"></p>
+            </h1>
+            <img class="img5" src="resources/images/phones.png">
+            </div>
+            <footer>
+                <ul>
+                    <li class="li1">COMPANY</li>
+                    <li>Our story</li>
+                    <li>Community</li>
+                    <li>Philanthropy</li>
+                    <li>Corporate Rides</li>
+                </ul>
+                <ul>
+                    <li class="li1">HELP</li>
+                    <li>FAQ</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>California Privacy</li>
+                    <li>California Notice of Collection</li>
+                    <li>Do Not Sell My Personal<br>Information</li>
+                    <li>Children's Privacy</li>
+                    <li>Contact Us</li>
+
+                </ul>
+                <ul>
+                    <li class="li1">ACCOUNT / SHOP</li>
+                    <li>Sign In</li>
+                    <li>Gift Card Balance</li>
+                    <li>Purchase History</li>
+                </ul>
+                <ul class="ul">
+                    <h2 class="htwo">FOLLOW US</h2>
+                    <li class="li7"><i class="fab fa-instagram fa-2x"></i>   &nbsp; &nbsp; &nbsp;&nbsp;
+                    <i class="fab fa-facebook-f fa-2x"></i>   &nbsp; &nbsp; &nbsp;&nbsp;
+                    <i class="fab fa-twitter fa-2x"></i></li>
+                </ul>
+               <h6><img class="img8" src="resources/images/apple.png"><br>
+                <div class="div9"><p>Copyright &copyright 2021 SoulCycle<br>
+                    SoulCycle Inc. is a corporation registered in Delaware, 
+                    USA with its headquarters at 609 <br>Greenwich Street, New York, NY 10014</p>
+                    <img class="img9" src="resources/images/wheel.jpg">
+                    </div></h6>
+            </footer>
+
+        </div>
+
+    </body>
+</html>
